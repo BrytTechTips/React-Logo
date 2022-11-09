@@ -1,0 +1,42 @@
+.react-circle{
+    width: 40px;
+    height: 40px;
+    background-color: #61dafb;
+    margin: 120px auto 0;
+    transform: rotateZ(30deg);
+}
+.react-circle,
+.react-ovals{
+    position: relative;
+}
+.react-circle,
+.react-ovals,
+.react-ovals:before,
+.react-ovals:after{
+    border-radius: 50%;
+}
+.react-ovals,
+.react-ovals:before,
+.react-ovals:after{
+    width: 76px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 10px solid #61dafb;
+    top: -80px;
+    left: -17px;
+}
+.react-ovals:before,
+.react-ovals:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transform-origin: 38px;
+}
+.react-ovals:before{
+    transform: rotateZ(60deg);
+}
+.react-ovals:after{
+    transform: rotateZ(-60deg);
+}
